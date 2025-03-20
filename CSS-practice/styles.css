@@ -1,0 +1,38 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+
+ 
+footer {
+    color: green;
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+a.special {
+    color: purple;   
+}
+em {
+    color: blue;
+}
+
+h1 + p {
+    font-size: 200%;
+}
+
+a:visited {color: green;}
+a:hover {
+    color: red;
+    text-decoration: none;
+}
