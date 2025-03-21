@@ -1,0 +1,93 @@
+.box {
+    background-color: greenyellow;
+}
+main .box{
+    display: flexbox;
+}
+
+.header h1 {
+    font-family: 'Consolas', monospace;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 56px;
+}
+
+.entirepage {
+    background-color: pink;
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 10%;
+    padding-bottom: 5%;
+    
+}
+
+.navbar a{
+    font-family: "consolas", monospace;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar {
+    width = 90%;
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Align vertically in the center */
+    position: relative; /* Positioning context for the logo */
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+h2 {
+    font-family: 'consolas', monospace;
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'consolas', monospace;
+}
+
+aside img {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+}
+
+.box1 {
+    width: 60%;
+}
+
+.box2 {
+    width: 40%;
+}
+
+.image-container {
+    display: grid;  /* Use CSS Grid */
+    grid-template-columns: repeat(2, 1fr);  /* Creates 2 equal columns */
+    grid-template-rows: repeat(2, 1fr);  /* Creates 2 equal rows */
+    gap: 10px;  /* Adds space between the images */
+    width: 100%;
+}
