@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-US">
     <head>
-        <meta charset="utf_8" />
+        <meta charset="UTF-8" />
         <meta name="author" content="Dylan Stanger" />
         <meta name="description" content="Comp1004 Coursework" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js" defer></script>
+        <script src="scripts.js" type="module" defer></script>
         <title>1004 Coursework</title>
     </head>
     <body>
@@ -25,15 +25,15 @@
             </aside>
             <main>
                 <span>
-                    <form action="#" method="post">
-                        <label for="name">Search by driver name</label><br>
-                        <input type="text" id="name" name="name"><br><br>
+                    <form id="driverName">
+                        <label>Search by driver name</label><br>
+                        <input type="text" id="name" placeholder="Enter name"><br><br>
                     </form>
-                    <form action="#" method="post">
-                        <label for="name">Search by driving licence number</label><br>
-                        <input type="text" id="license" name="license"><br><br>
+                    <form id="licenseNumber">
+                        <label>Search by driving licence number</label><br>
+                        <input type="text" id="license" placeholder="Enter licence number"/><br><br>
                     </form>
-                    <button>Submit</button>
+                    <button id="submit">Submit</button>
                 </span>
                 <p id="message"></p>
                 <div class="resultBox" id="results">
