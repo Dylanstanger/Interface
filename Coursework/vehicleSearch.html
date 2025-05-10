@@ -6,36 +6,31 @@
         <meta name="description" content="Comp1004 Coursework" />
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
-        <title>1004 Coursework</title>
+        <title>Vehicle Search</title>
     </head>
     <body>
         <header>
-            <h1>People Search</h1>
+            <h1>Vehicle Search</h1>
             <nav>
                 <ul>
-                    <li>People search</li>
-                    <li><a href="vehicleSearch.html">Vehicle search</a></li>
+                    <li><a href="index.html">People search</a></li>
+                    <li>Vehicle search</li>
                     <li><a href="addAVehicle.html">Add a vehicle</a></li>
                 </ul>
             </nav>
         </header>
         <div class="sidemain" id="container">
             <aside>
-                <img src="images/people search.png" alt="picture of car"> 
+                <img src="images/vehiclesearch.webp" alt="image of magnifying glass looking at a vehicle"> 
             </aside>
             <main>
                 <span>
                     <form action="#" method="post">
-                        <label for="name">Search by driver name</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
-                    <form action="#" method="post">
-                        <label for="name">Search by driving licence number</label><br>
-                        <input type="text" id="license" name="license"><br><br>
+                        <label for="name">Search by vehicle registration</label><br>
+                        <input type="text" id="rego" name="rego"><br><br>
                     </form>
                     <button>Submit</button>
                 </span>
-                <p id="message"></p>
                 <div class="resultBox" id="results">
                 </div>
                 
