@@ -16,7 +16,10 @@ body {
     font-family: 'consolas', monospace;
 }
 
-.resultBox {
+.resultBox  {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
     border-style: dashed;
     border-color: black;
     border-width: 2px;
@@ -24,6 +27,14 @@ body {
     padding: 10px;
 }
 
+.results-div{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 5px;
+    padding: 5px; 
+    
+}
 .sidemain {
     display: grid;
     grid-template-columns: 20% 80%;    
@@ -37,5 +48,9 @@ header ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+}
+
+#addOwnerForm {
+    display: none;
 }
 

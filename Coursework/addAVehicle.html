@@ -25,31 +25,55 @@
             </aside>
             <main>
                 <span>
-                    <form action="#" method="post">
-                        <label for="name">Registration number</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
-                    <form action="#" method="post">
-                        <label for="name">Make</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
-                    <form action="#" method="post">
-                        <label for="name">Model</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
-                    <form action="#" method="post">
-                        <label for="name">Colour</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
-                    <form action="#" method="post">
-                        <label for="name">Owner</label><br>
-                        <input type="text" id="name" name="name"><br><br>
-                    </form>
+                    <form id="addVehicle">
+                        <label>Registration Number</label><br>
+                        <input type="text" id="rego" placeholder="Enter vehicle reg"><br><br>
+            
+                        <label>Make</label><br>
+                        <input type="text" id="make" placeholder="Enter vehicle make"><br><br>
+                    
+                        <label>Model</label><br>
+                        <input type="text" id="model" placeholder="Enter vehicle model"><br><br>
 
+                        <label>Colour</label><br>
+                        <input type="text" id="colour" placeholder="Enter vehicle colour"><br><br>
+                    
+                        <label>Owner</label><br>
+                        <input type="text" id="owner" placeholder="Enter vehicle owner"><br><br>
+
+                        <button id="checkOwner">Check Owner</button>
+                    </form>
+                    <br><br>
+                    <button id="addVehicleButton" >Add Vehicle</button>
+                    <p id="message-vehicle"></p>
                 </span>
-                <div class="resultBox" id="results">
-                </div>
+                    
+                <div class="resultBox" id="owner-results"></div>
+                <div id="newOwner"></div>
+                <br><br>
                 
+                <div id="addOwnerDiv">
+                    <form id="addOwnerForm">
+                        <label>Name</label><br>
+                        <input type="text" id="name" placeholder="Enter owner name"><br><br>
+
+                        <label>Address</label><br>
+                        <input type="text" id="address" placeholder="Enter owner address"><br><br>
+
+                        <label>DOB</label><br>
+                        <input type="text" id="dob" placeholder="yyyy-mm-dd"><br><br>
+
+                        <label>License Number</label><br>
+                        <input type="text" id="license" placeholder="Enter owner license number"><br><br>
+
+                        <label>Expiry Date</label><br>
+                        <input type="text" id="expire" placeholder="yyyy-mm-dd"><br><br>
+
+                        <button id="addOwner">Add Owner</button>
+                    </form>
+                    <p id="message-owner"></p>
+                </div>
+  
                 
             </main>
         </div>
