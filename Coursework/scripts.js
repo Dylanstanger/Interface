@@ -135,13 +135,7 @@ async function selectOwnerFunc () {
 
     let data = null;
     
-
-
-    if (owner === "") {
-        return;
-    }
-
-    else {      
+     
         results.innerHTML ='';
 
         const response = await supabase
@@ -200,7 +194,7 @@ async function selectOwnerFunc () {
                 const messageOwner = document.getElementById('message-owner');
 
                 if(newName ===''||address===''||dob===''||license===''|expire==='') {
-                    messageOwner.textContent = 'Error: Please fill in every box';
+                    messageOwner.textContent = 'Error: Please fill in every box with the correct information';
                 } else {
 
                     const newOwnerDataToMatch ={
@@ -248,7 +242,7 @@ async function selectOwnerFunc () {
                     }
                 }   
             });
-    }       
+         
 }
 
 
