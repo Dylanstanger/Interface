@@ -1,11 +1,8 @@
-import exp from 'constants';
-
-// @ts-check
+import exp from 'constants'; 
 const { test, expect} = require('@playwright/test');
-
-// change this to the URL of your website, could be local or GitHub pages
 const websiteURL = ' http://localhost:8000/';
 
+//before every test, go to the index and back to the add a vehicle page 
 test.beforeEach(async ({ page }) => {
    await page.goto(websiteURL);
     await page.getByRole('link', { name: 'Add a Vehicle' }).click();
@@ -197,5 +194,6 @@ test('Test everything correct', async ({page}) => {
     await page.locator('#rego').fill('FY68 XHE')
     await page.getByRole('button', {name: 'Submit'}).click();
     await expect(page.locator('#results')).toContainText('Dylan Stanger')
+
 
 });
