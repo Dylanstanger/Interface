@@ -242,7 +242,8 @@ async function selectOwnerFunc () {
                             .insert([newOwnerData]);
 
                             messageOwner.textContent = 'Owner added successfully';
-                            addOwnerForm.style.display ='none'; 
+                            selectedOwner =newName;
+                             
                     }
                 }   
             });
