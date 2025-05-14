@@ -179,8 +179,8 @@ async function selectOwnerFunc () {
             const newOwnerButton = document.createElement('button');
             newOwnerButton.textContent = 'New Owner';
             newOwnerButton.addEventListener('click', function () {
-
-                addOwnerForm = document.getElementById('addOwnerForm');
+                
+                const addOwnerForm = document.getElementById('addOwnerForm');
 
                 addOwnerForm.style.display ='block';
             });
@@ -196,7 +196,7 @@ async function selectOwnerFunc () {
                 const dob = document.getElementById('dob').value.trim();
                 const license = document.getElementById('license').value.trim();
                 const expire = document.getElementById('expire').value.trim();
-                const addOwnerForm = document.getElementById('addOwnerForm');
+                
                 const messageOwner = document.getElementById('message-owner');
 
                 if(newName ===''||address===''||dob===''||license===''|expire==='') {
@@ -242,6 +242,7 @@ async function selectOwnerFunc () {
                             .insert([newOwnerData]);
 
                             messageOwner.textContent = 'Owner added successfully';
+                             
                             selectedOwner =newName;
                              
                     }
