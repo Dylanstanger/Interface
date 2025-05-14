@@ -287,14 +287,9 @@ async function addVehicleFunc () {
     }
 }
 
-if(path.includes('index.html')) {
-    document.getElementById('driverName').addEventListener('submit', function (event) {
-        event.preventDefault();
-        PeopleSearchFunc(); 
-    });
-}
 
-else if (path.includes('vehicleSearch.html')) {
+
+if (path.includes('vehicleSearch.html')) {
     document.getElementById('vehicle reg form').addEventListener('submit', function (event) {
         event.preventDefault();
         VehicleSearchFunc(); 
@@ -309,5 +304,11 @@ else if (path.includes('addAVehicle.html')) {
     document.getElementById('addVehicleButton').addEventListener('click', addVehicleFunc);
 }
 
+else {
+    document.getElementById('driverName').addEventListener('submit', function (event) {
+        event.preventDefault();
+        PeopleSearchFunc(); 
+    });
+}
 
 
