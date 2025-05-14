@@ -9,6 +9,7 @@
         <title>Vehicle Search</title>
     </head>
     <body>
+        <div id="container">
         <header>
             <h1>Vehicle Search</h1>
             <nav>
@@ -19,14 +20,10 @@
                 </ul>
             </nav>
         </header>
-        <div class="sidemain" id="container">
-            <aside>
-                <img src="images/vehiclesearch.webp" alt="image of magnifying glass looking at a vehicle"> 
-            </aside>
             <main>
                 <span>
                     <form id="vehicle reg form">
-                        <label>Search by vehicle registration</label><br>
+                        <label for="rego">Search by vehicle registration</label><br>
                         <input type="text" id="rego" placeholder="Enter registration"><br><br>
                         <button id="submitVehicle">Submit</button>
                     </form>
@@ -34,10 +31,12 @@
                 </span>
                 <p id="message"></p>
                 <div class="resultBox" id="results"></div>
-                
-                
             </main>
+            <aside>
+                <img src="images/vehiclesearch.webp" alt="image of magnifying glass looking at a vehicle"> 
+            </aside>
+        <footer>This is the footer</footer>
         </div>
     </body>
-    <footer>This is the footer</footer>
+    
 </html>

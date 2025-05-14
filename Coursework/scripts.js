@@ -244,7 +244,7 @@ async function selectOwnerFunc () {
                             messageOwner.textContent = 'Owner added successfully';
                              
                             selectedOwner =newName;
-                             
+                            selectedID = (count+1);
                     }
                 }   
             });

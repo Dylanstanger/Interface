@@ -9,6 +9,7 @@
         <title>Add A Vehicle</title>
     </head>
     <body>
+        <div id='container' >
         <header>
             <h1>Add a Vehicle</h1>
             <nav>
@@ -19,26 +20,22 @@
                 </ul>
             </nav>
         </header>
-        <div class="sidemain" id="container">
-            <aside>
-                <img src="images/addavehicle.png" alt="picture of car"> 
-            </aside>
-            <main>
+        <main>
                 <span>
                     <form id="addVehicle">
-                        <label>Registration Number</label><br>
+                        <label for="rego">Registration Number</label><br>
                         <input type="text" id="rego" placeholder="Enter vehicle reg"><br><br>
             
-                        <label>Make</label><br>
+                        <label for="make">Make</label><br>
                         <input type="text" id="make" placeholder="Enter vehicle make"><br><br>
                     
-                        <label>Model</label><br>
+                        <label for="model">Model</label><br>
                         <input type="text" id="model" placeholder="Enter vehicle model"><br><br>
 
-                        <label>Colour</label><br>
+                        <label for="colour">Colour</label><br>
                         <input type="text" id="colour" placeholder="Enter vehicle colour"><br><br>
                     
-                        <label>Owner</label><br>
+                        <label for="owner">Owner</label><br>
                         <input type="text" id="owner" placeholder="Enter vehicle owner"><br><br>
 
                         <button id="checkOwner">Check Owner</button>
@@ -54,29 +51,31 @@
                 
                 <div id="addOwnerDiv">
                     <form id="addOwnerForm">
-                        <label>Name</label><br>
+                        <label for="name">Name</label><br>
                         <input type="text" id="name" placeholder="Enter owner name"><br><br>
 
-                        <label>Address</label><br>
+                        <label for="address">Address</label><br>
                         <input type="text" id="address" placeholder="Enter owner address"><br><br>
 
-                        <label>DOB</label><br>
+                        <label for="dob">DOB</label><br>
                         <input type="text" id="dob" placeholder="yyyy-mm-dd"><br><br>
 
-                        <label>License Number</label><br>
+                        <label for="license">License Number</label><br>
                         <input type="text" id="license" placeholder="Enter owner license number"><br><br>
 
-                        <label>Expiry Date</label><br>
+                        <label for="expire">Expiry Date</label><br>
                         <input type="text" id="expire" placeholder="yyyy-mm-dd"><br><br>
 
                         <button id="addOwner">Add Owner</button>
                     </form>
                     <p id="message-owner"></p>
-                </div>
-  
-                
+                </div>  
             </main>
+            <aside>
+                <img src="images/addavehicle.png" alt="picture of car"> 
+            </aside>
+        <footer>This is the footer</footer>
         </div>
     </body>
-    <footer>This is the footer</footer>
+    
 </html>

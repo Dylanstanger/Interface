@@ -9,6 +9,7 @@
         <title>1004 Coursework</title>
     </head>
     <body>
+        <div id="container">
         <header>
             <h1>People Search</h1>
             <nav>
@@ -19,29 +20,29 @@
                 </ul>
             </nav>
         </header>
-        <div class="sidemain" id="container">
-            <aside>
-                <img src="images/people search.png" alt="picture of car"> 
-            </aside>
             <main>
                 <span>
                     <form id="driverName">
-                        <label>Search by driver name</label><br>
+                        <label for="name">Search by driver name</label><br>
                         <input type="text" id="name" placeholder="Enter name"><br><br>
                     
-                        <label>Search by driving licence number</label><br>
+                        <label for="license">Search by driving licence number</label><br>
                         <input type="text" id="license" placeholder="Enter licence number"/><br><br>
                         <button id="submitPeople">Submit</button>
                     </form>
                     
                 </span>
                 <p id="message"></p>
-                <div class="resultBox" id="results">
-                </div>
-                
-                
+                <div class="resultBox" id="results"></div>
             </main>
+            <aside>
+                <img src="images/people search.png" alt="picture of car"> 
+            </aside>
+
+            
+        
+        <footer>This is the footer</footer>
         </div>
     </body>
-    <footer>This is the footer</footer>
+    
 </html>
