@@ -262,7 +262,7 @@ async function addVehicleFunc () {
     const messageVehicle = document.getElementById('message-vehicle');
 
     if(selectedOwner==='') {
-        messageVehicle.textContent = 'Please select an owner before adding vehicle';
+        messageVehicle.textContent = 'Error: Please select an owner before adding vehicle';
     }
     else if(rego===''||make===''||model===''||colour==='') {
         messageVehicle.textContent='Error: Please fill in every vehicle box';
