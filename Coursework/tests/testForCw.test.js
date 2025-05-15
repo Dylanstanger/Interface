@@ -194,6 +194,4 @@ test('Test everything correct', async ({page}) => {
     await page.locator('#rego').fill('FY68 XHE')
     await page.getByRole('button', {name: 'Submit'}).click();
     await expect(page.locator('#results')).toContainText('Dylan Stanger')
-
-
 });
